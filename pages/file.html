@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download Portal</title>
+  <link rel="icon" type="image/png" href="/pages/images/afbfood_favicon.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .file-preview {
+      background: #eee;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      color: #555;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      margin: 6px 0;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .btn-preview {
+      background: #007bff;
+      color: #fff;
+    }
+
+    .btn-download {
+      background: #28a745;
+      color: #fff;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="/pages/images/afbfood.png" alt="AFB Food Logo" style="width:120px; margin-bottom:15px;" />
+    <h1>Download Portal</h1>
+    <div class="file-preview">
+      <strong>File:</strong> equipments_requirements.pdf<br>
+      <strong>Size:</strong> 2.5 KB<br>
+      <strong>Description:</strong> detailed list of the specific equipment we need to purchase.
+    </div>
+
+    <a class="btn btn-preview" href="/pages/files/equipments_requirements.pdf" target="_blank">🔍 Preview File</a><br>
+    <a class="btn btn-download" href="/pages/files/equipments_requirements.pdf" download>⬇️ Download File</a>
+  </div>
+</body>
+</html>

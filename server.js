@@ -320,8 +320,12 @@ app.use(scannerMiddleware);
 
 // ======= Routes =======
 app.get('/', (req, res) => {
-  log('warn', { event: 'root_scan', ip: req.ip });
-  return serveBenignPage(res); // Show generic error page
+  return res.sendFile(path.join(__dirname, 'pages', 'home.html'));
+});
+
+app.get('/download/id/4f92c7b1-ec3d', (req, res) => {
+  const fileId = sanitizeInput(req.params.fileId);
+  return res.sendFile(path.join(__dirname, 'pages', 'file.html'));
 });
 
 app.get('/documents/:docId',(req, res) => {
